@@ -20,7 +20,7 @@ public class StudentController {
         this.studentService = studentService;
     }
     @PostMapping
-    public ResponseEntity<Students> saveEmployee(@RequestBody Students students){
+    public ResponseEntity<Students> saveStudent(@RequestBody Students students){
         return new ResponseEntity<Students>(studentService.saveStudent(students), HttpStatus.CREATED);
     }
     @GetMapping
