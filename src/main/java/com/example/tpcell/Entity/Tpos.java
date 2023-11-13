@@ -12,18 +12,18 @@ public class Tpos {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "Username")
-    private String Username;
-    @Column(name = "Firstname")
-    private String FirstName;
-    @Column(name = "LastName")
-    private String LastName;
-    @Column(name = "Email")
-    private String Email;
-    @Column(name = "Number")
-    private BigInteger Number;
-    @Column (name = "Password")
-    private String Password;
+    @Column(name = "username")
+    private String username;
+    @Column(name = "firstname")
+    private String firstName;
+    @Column(name = "lastName")
+    private String lastName;
+    @Column(name = "email")
+    private String email;
+    @Column(name = "number")
+    private BigInteger number;
+    @Column(name = "password")
+    private String password;
 
     public Long getId() {
         return id;
@@ -34,50 +34,50 @@ public class Tpos {
     }
 
     public String getUsername() {
-        return Username;
+        return username;
     }
 
     public void setUsername(String username) {
-        Username = username;
+        this.username = username;
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public BigInteger getNumber() {
-        return Number;
+        return number;
     }
 
     public void setNumber(BigInteger number) {
-        Number = number;
+        this.number = number;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        this.password = password;
     }
 }
