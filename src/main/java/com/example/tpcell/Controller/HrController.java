@@ -1,7 +1,5 @@
 package com.example.tpcell.Controller;
-
 import com.example.tpcell.Entity.Hrs;
-import com.example.tpcell.Entity.Students;
 import com.example.tpcell.Service.HrService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,16 +1,16 @@
 package com.example.tpcell.Service;
-
 import com.example.tpcell.Entity.Hrs;
-import com.example.tpcell.Entity.Students;
 import com.example.tpcell.Exception.ResourceNotFoundException;
 import com.example.tpcell.Repository.HrRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class HrServiceImpl implements HrService{
     private HrRepository hrRepository;
-
+    @Autowired
     public HrServiceImpl(HrRepository hrRepository) {
         this.hrRepository = hrRepository;
     }

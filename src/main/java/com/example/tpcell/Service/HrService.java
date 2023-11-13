@@ -1,11 +1,10 @@
 package com.example.tpcell.Service;
 
 import com.example.tpcell.Entity.Hrs;
-import com.example.tpcell.Entity.Students;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Service
+
 public interface HrService {
 
     Hrs saveHrs(Hrs hrs);

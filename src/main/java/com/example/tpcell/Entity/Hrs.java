@@ -12,20 +12,20 @@ public class Hrs {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
-    @Column(name = "Username",nullable = false)
-    private String Username;
-    @Column(name = "Firstname")
-    private String FirstName;
-    @Column(name = "Lastname")
-    private String  Lastname;
-    @Column(name = "Email")
-    private String Email;
-    @Column(name = "Company")
-    private String Company;
-    @Column(name = "Contact")
-    private String Contact;
-    @Column(name = "Password")
-    private String Password;
+    @Column(name = "user_name",nullable = false)
+    private String username;
+    @Column(name = "first_name")
+    private String firstName;
+    @Column(name = "last_name")
+    private String  lastname;
+    @Column(name = "e_mail")
+    private String email;
+    @Column(name = "company")
+    private String company;
+    @Column(name = "contact")
+    private String contact;
+    @Column(name = "password")
+    private String password;
 
     public Hrs() {
 
@@ -40,69 +40,58 @@ public class Hrs {
     }
 
     public String getUsername() {
-        return Username;
+        return username;
     }
 
     public void setUsername(String username) {
-        Username = username;
+        this.username = username;
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastname() {
-        return Lastname;
+        return lastname;
     }
 
     public void setLastname(String lastname) {
-        Lastname = lastname;
+        this.lastname = lastname;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public String getCompany() {
-        return Company;
+        return company;
     }
 
     public void setCompany(String company) {
-        Company = company;
+        this.company = company;
     }
 
     public String getContact() {
-        return Contact;
+        return contact;
     }
 
     public void setContact(String contact) {
-        Contact = contact;
+        this.contact = contact;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        Password = password;
-    }
-
-    public Hrs(Long id, String username, String firstName, String lastname, String email, String company, String contact, String password) {
-        this.id = id;
-        Username = username;
-        FirstName = firstName;
-        Lastname = lastname;
-        Email = email;
-        Company = company;
-        Contact = contact;
-        Password = password;
+        this.password = password;
     }
 }
